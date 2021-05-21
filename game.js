@@ -115,7 +115,7 @@ async function handleReset(){
 
 const handleCellClick = (e) => {
   const classList = e.target.classList;
-  if (!gameIsLive || classList[1] === 'x' || classList[1] === 'o') {
+  if (!gameIsLive || classList[2] === 'x' || classList[2] === 'o') {
     return;
   }
   if (xIsNext) {
